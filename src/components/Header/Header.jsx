@@ -3,14 +3,15 @@ import './Header.css';
 const Header = () => {
     return (
         <header className="header">
-            <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                <h1>IBIS</h1>
-            </div>
-            <button className="login-button">
-                <a href="/login">Iniciar sesión</a>
-            </button>
+            <h1>Ibis - Centro de Bioestética</h1>
+            <nav>
+                <a href="/">Inicio</a>
+                <a href="/services">Servicios</a>
+                <a href="/login">Iniciar Sesión</a>
+            </nav>
         </header>
     );
-};
+}
 
 export default Header;
+
